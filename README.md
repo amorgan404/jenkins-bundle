@@ -50,9 +50,9 @@ docker push morgan404/jenkins-bundle:latest
 Run the Docker container:
 
 ```
-    docker run -d -p 8080:8080 -p 50000:50000 \
-    -v jenkins_home:/var/jenkins_home \
-    morgan404/jenkins-bundle:latest
+docker run -d -p 8080:8080 -p 50000:50000 \
+-v jenkins_home:/var/jenkins_home \
+morgan404/jenkins-bundle:latest
 ```
 
 This command will pull the image from Docker Hub and run it with the same configurations as described above.
