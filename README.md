@@ -29,11 +29,10 @@ docker build -t my-jenkins .
 ```
 
 3. Run the Docker container:
-
 ```
-    docker run -d -p 8080:8080 -p 50000:50000 \
-    -v jenkins_home:/var/jenkins_home \
-    my-jenkins
+docker run -d -p 8080:8080 -p 50000:50000 \
+-v jenkins_home:/var/jenkins_home \
+my-jenkins
 ```
 
 This command runs Jenkins on port 8080, with port 50000 open for Jenkins agents. The jenkins_home volume is used to persist Jenkins data.
@@ -42,10 +41,9 @@ This command runs Jenkins on port 8080, with port 50000 open for Jenkins agents.
 
 If you prefer to pull the image from Docker Hub instead of building it locally, follow these steps:
 
-    Pull the Docker Hub image:
+Pull the Docker Hub image:
 
 ```
-
 docker push morgan404/jenkins-bundle:latest
 ```
 
@@ -69,7 +67,8 @@ This command will pull the image from Docker Hub and run it with the same config
 
 Jenkins data is stored in the /var/jenkins_home directory inside the container. It's recommended to use a Docker volume or bind mount to persist this data:
 
-  **Docker Volume**: -v jenkins_home:/var/jenkins_home
-  **Bind Mount**: -v /path/on/host:/var/jenkins_home
+**Docker Volume**: -v jenkins_home:/var/jenkins_home
+
+**Bind Mount**: -v /path/on/host:/var/jenkins_home
 
 Using persistent storage ensures that your Jenkins data, including configurations, plugins, and job information, is retained across container restarts and upgrades.
