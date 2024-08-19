@@ -1,4 +1,5 @@
 # Dockerfile Description
+![logo](https://github.com/amorgan404/jenkins-bundle/blob/1e1d2bce712fbd5c518dca4fc3a4f985f241e605/Logo.png)
 
 This Dockerfile is based on the official Jenkins LTS image and is customized to include Java and Maven, along with some essential Jenkins plugins.
 
