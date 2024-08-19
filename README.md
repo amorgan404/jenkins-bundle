@@ -1,5 +1,7 @@
 # Dockerfile Description
-![logo](https://gitlab.com/morgan404/jenkins-bundle/-/blob/main/Logo.png)
+<p align="center">
+<img src=https://raw.githubusercontent.com/amorgan404/jenkins-bundle/1e1d2bce712fbd5c518dca4fc3a4f985f241e605/Logo.png width=25% height=25%/>
+</p>
 
 This Dockerfile is based on the official Jenkins LTS image and is customized to include Java and Maven, along with some essential Jenkins plugins.
 
@@ -20,7 +22,7 @@ How to Build the Docker Image
 
 1. Clone the repository:
 ```
-git clone https://gitlab.com/morgan404/jenkins-bundle.git
+git clone https://github.com/amorgan404/jenkins-bundle.git
 cd jenkins-bundle
 ```
 
@@ -45,7 +47,7 @@ If you prefer to pull the image from Docker Hub instead of building it locally, 
 Pull the Docker Hub image:
 
 ```
-docker push morgan404/jenkins-bundle:latest
+docker pull morgan404/jenkins-bundle:latest
 ```
 
 Run the Docker container:
